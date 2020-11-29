@@ -3,6 +3,8 @@ import Router from 'vue-router'
 
 import Home from './components/Home.vue'
 import Sobre from './components/Sobre.vue'
+import Contatos from './components/Contatos.vue'
+import Pagamentos from './components/Pagamentos.vue'
 
 import Massagens from './components/terapias/Massagens.vue'
 import Reiki from './components/terapias/Reiki.vue'
@@ -26,6 +28,14 @@ export default new Router({
       path: '/sobre',
       name: 'sobre',
       component: Sobre
+   }, {
+      path: '/contatos',
+      name: 'contatos',
+      component: Contatos
+   }, {
+      path: '/pagamentos',
+      name: 'pagamentos',
+      component: Pagamentos
    }, {
       path: '/massagens',
       name: 'massagens',

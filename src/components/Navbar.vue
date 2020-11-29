@@ -55,6 +55,22 @@
               </v-btn>
             </v-list-item-title>
           </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>
+              <v-btn>
+                <router-link to="/contatos">Contatos</router-link>
+              </v-btn>
+            </v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>
+              <v-btn>
+                <router-link to="/pagamentos">Pagamentos</router-link>
+              </v-btn>
+            </v-list-item-title>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
