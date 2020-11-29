@@ -4,6 +4,15 @@ import Router from 'vue-router'
 import Home from './components/Home.vue'
 import Sobre from './components/Sobre.vue'
 
+import Massagens from './components/terapias/Massagens.vue'
+import Reiki from './components/terapias/Reiki.vue'
+import Aroma from './components/terapias/Aroma.vue'
+import Psico from './components/terapias/Psico.vue'
+import Shiatsu from './components/terapias/Shiatsu.vue'
+import Auricolo from './components/terapias/Auricolo.vue'
+import Ventosa from './components/terapias/Ventosa.vue'
+import Magneto from './components/terapias/Magneto.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -17,5 +26,37 @@ export default new Router({
       path: '/sobre',
       name: 'sobre',
       component: Sobre
+   }, {
+      path: '/massagens',
+      name: 'massagens',
+      component: Massagens
+   }, {
+      path: '/reiki',
+      name: '/reiki',
+      component: Reiki
+   }, {
+      path: '/aroma',
+      name: 'aroma',
+      component: Aroma
+   }, {
+      path: '/psico',
+      name: 'psico',
+      component: Psico
+   }, {
+      path: '/shiatsu',
+      name: 'shiatsu',
+      component: Shiatsu
+   }, {
+      path: '/auricolo',
+      name: 'auricolo',
+      component: Auricolo
+   }, {
+      path: '/ventosa',
+      name: 'ventosa',
+      component: Ventosa
+   }, {
+      path: '/magneto',
+      name: 'magneto',
+      component: Magneto
    }]
 })

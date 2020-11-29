@@ -28,6 +28,7 @@ export default {
 .home img {
     border-style: none;
     width: 30%;
+    height: 50%;
     text-align: center;
     margin: 0 auto;
 }
