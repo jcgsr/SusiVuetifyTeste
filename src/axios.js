@@ -8,3 +8,5 @@ Vue.use({
       Vue.prototype.$http = axios
    }
 })
+
+export default axios

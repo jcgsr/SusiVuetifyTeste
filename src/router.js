@@ -5,6 +5,8 @@ import Home from './components/Home.vue'
 import Sobre from './components/Sobre.vue'
 import Contatos from './components/Contatos.vue'
 import Pagamentos from './components/Pagamentos.vue'
+import Login from './components/Login.vue'
+import Sinergias from './components/Sinergias.vue'
 
 import Massagens from './components/terapias/Massagens.vue'
 import Reiki from './components/terapias/Reiki.vue'
@@ -36,6 +38,14 @@ export default new Router({
       path: '/pagamentos',
       name: 'pagamentos',
       component: Pagamentos
+   }, {
+      path: '/login',
+      name: 'login',
+      component: Login
+   }, {
+      path: '/sinergias',
+      name: 'sinergias',
+      component: Sinergias
    }, {
       path: '/massagens',
       name: 'massagens',
