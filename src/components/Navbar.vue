@@ -24,7 +24,13 @@
 
       <v-list-item>
         <v-btn>
-          <router-link to="/login">Login</router-link>
+          <router-link to="/login">Sinergias</router-link>
+        </v-btn> 
+      </v-list-item>
+
+       <v-list-item>
+        <v-btn>
+          <router-link to="/cadastro">Cadastro</router-link>
         </v-btn> 
       </v-list-item>
 

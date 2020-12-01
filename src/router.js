@@ -6,6 +6,7 @@ import Sobre from './components/Sobre.vue'
 import Contatos from './components/Contatos.vue'
 import Pagamentos from './components/Pagamentos.vue'
 import Login from './components/Login.vue'
+import Cadastro from './components/Cadastro.vue'
 import Sinergias from './components/Sinergias.vue'
 
 import Massagens from './components/terapias/Massagens.vue'
@@ -42,6 +43,10 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+   }, {
+      path: '/cadastro',
+      name: 'cadastro',
+      component: Cadastro
    }, {
       path: '/sinergias',
       name: 'sinergias',
