@@ -9,23 +9,39 @@
       >
         <router-view @authenticated="setAuthenticated"></router-view>
       </transition>
-    </v-main>
+    </v-main>   
+    <p>{{ currentDate }}</p> 
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
+  data: () => ({
+    currentDate: "Data de hoje...",
+  }),
 
   components: {
     Navbar,
+    Footer,
   },
-
-  data: () => ({
-    //
-  }),
+  methods: {
+    dataAtual: function () {
+      let hoje = new Date();
+      this.currentDate = hoje.toLocaleDateString("pt-BR", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      });
+    },
+  },
+  mounted() {
+    this.dataAtual();
+  },
 };
 </script>
 <style scoped>
@@ -42,5 +58,10 @@ body {
   background-color: blueviolet;
   display: flex;
   flex-direction: column;
+}
+p {
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
 }
 </style>

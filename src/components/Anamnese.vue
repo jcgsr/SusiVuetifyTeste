@@ -177,8 +177,14 @@
         </v-radio-group>
         <v-text-field dark v-model="anamnese.qual_questao_saude"></v-text-field>
         <h3><strong>OBSERVAÇÕES</strong></h3>
-        <p>*Não é recomendado fazer massagem se estiver com virose/gripe ou febril.</p>
-        <p>*Favor avisar quando estiver menstruada para evitar estímulos no baixo ventre.</p>
+        <p>
+          *Não é recomendado fazer massagem se estiver com virose/gripe ou
+          febril.
+        </p>
+        <p>
+          *Favor avisar quando estiver menstruada para evitar estímulos no baixo
+          ventre.
+        </p>
       </div>
     </v-container>
     <div class="btn">
@@ -269,16 +275,16 @@ export default {
       );
       alert("Anamnese gravada!");
     },
-  },
-  signOut() {
-    firebase
-      .auth()
-      .signOut()
-      .then(() => {
-        this.$router.replace({
-          name: "home",
+    signOut() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.replace({
+            name: "home",
+          });
         });
-      });
+    },
   },
 };
 </script>

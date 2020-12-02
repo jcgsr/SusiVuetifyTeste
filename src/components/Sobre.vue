@@ -1,8 +1,32 @@
 <template>
   <div class="sobre">
     <h1>Sobre</h1>
-    <v-card class="mx-auto animate__animated animate__jello" max-width="344" rounded outlined>
+    <v-card
+      class="mx-auto animate__animated animate__jello mt-4"
+      max-width="344"
+      rounded
+      outlined
+    >
       <v-card-text class="purple--text">
+        <p>
+          Meu nome é Susi Pessôa, tenho 37 anos. Minha formação inicial é em
+          Direito. <br> COMO A DEPRESSÃO ME FEZ DESCOBRIR A MASSOTERAPIA E AS OUTRAS
+          TERAPIAS HOLÍSTICAS? <br> Não acabei vindo para o universo das terapias
+          holísticas porque estava desiludida com minha formação original ou por
+          ter não ter "paixão" pela área. Na verdade eu gostava muito do meu
+          curso, senão não teria conseguido concluir. A vida e suas estratégias,
+          por vezes aparentemente cruéis, foi quem me levou a outros caminhos.
+          Em 2015 procurei um curso de massoterapia como uma terapia para mim
+          mesma, para me ajudar a combater uma severa depressão que me
+          acompanhava já há alguns anos. Na época eu já era formada em Direito
+          há 4 anos, possuía OAB, mas não atuava e nem conseguia estudar para os
+          concursos que eu tanto sonhava. Aquele curso de massagem era apenas
+          pra distrair minha mente e, "se eu gostasse, poderia tentar ganhar
+          algum dinheiro, quem sabe...", pensava eu. E assim, como que "sem
+          querer", a pior experiência da minha vida, uma terrível doença que me
+          fez chegar aos mais profundos abismos da existência, paradoxalmente me
+          levou a maravilhosas jornadas de autoconhecimento e realizações.
+        </p>
         <p>
           ENCONTRANDO MEU PROPÓSITO DE VIDA <br />
           Assim, fiz o curso profissionalizante de Massoterapia, com
