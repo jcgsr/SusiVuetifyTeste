@@ -143,6 +143,42 @@
             </v-row>
           </v-card-text>
         </v-card>
+
+        <p>11. Gripe ou resfriado?</p>
+        <v-radio-group v-model="anamnese.gripe_resfriado" dark>
+          <v-radio label="Sim" value="sim"></v-radio>
+          <v-radio label="Não" value="não"></v-radio>
+        </v-radio-group>
+
+        <p>12. Depressão?</p>
+        <v-radio-group v-model="anamnese.depressao" dark>
+          <v-radio label="Sim" value="sim"></v-radio>
+          <v-radio label="Não" value="não"></v-radio>
+        </v-radio-group>
+
+        <p>13. Ansiedade?</p>
+        <v-radio-group v-model="anamnese.ansiedade" dark>
+          <v-radio label="Sim" value="sim"></v-radio>
+          <v-radio label="Não" value="não"></v-radio>
+        </v-radio-group>
+
+        <p>14. Dores?</p>
+        <v-radio-group v-model="anamnese.dores" dark>
+          <v-radio label="Sim" value="sim"></v-radio>
+          <v-radio label="Não" value="não"></v-radio>
+        </v-radio-group>
+        <v-subheader dark>Local do corpo</v-subheader>
+        <v-text-field dark v-model="anamnese.local_corpo"></v-text-field>
+
+        <p>15. Algum outra questão de saúde relevante para considerar?</p>
+        <v-radio-group v-model="anamnese.outra_questao_saude" dark>
+          <v-radio label="Sim" value="sim"></v-radio>
+          <v-radio label="Não" value="não"></v-radio>
+        </v-radio-group>
+        <v-text-field dark v-model="anamnese.qual_questao_saude"></v-text-field>
+        <h3><strong>OBSERVAÇÕES</strong></h3>
+        <p>*Não é recomendado fazer massagem se estiver com virose/gripe ou febril.</p>
+        <p>*Favor avisar quando estiver menstruada para evitar estímulos no baixo ventre.</p>
       </div>
     </v-container>
     <div class="btn">
@@ -188,9 +224,10 @@ export default {
         dores: "",
         local_corpo: "",
         outra_questao_saude: "",
+        qual_questao_saude: "",
       },
       min: 1,
-      max: 9,      
+      max: 9,
     };
   },
   computed: {
@@ -221,7 +258,8 @@ export default {
         (this.anamnese.ansiedade = ""),
         (this.anamnese.dores = ""),
         (this.anamnese.local_corpo = ""),
-        (this.anamnese.outra_questao_saude = "");
+        (this.anamnese.outra_questao_saude = ""),
+        (this.anamnese.qual_questao_saude = "");
     },
     gravar() {
       const metodo = this.id ? "patch" : "post";
